@@ -1,0 +1,12 @@
+<div class="all_page">
+    <div class="container">
+        <form action="" [formGroup]="myForm" (ngSubmit)="calculate()">
+            <label for="x">input x : </label>
+            <input type="number" name="x" id="x" formControlName="x">
+            <label for="y">input y : </label>
+            <input type="number" name="y" id="y" formControlName="y">
+            <input type="submit" value="max" [disabled]="myForm.invalid">
+        </form>
+        <p>Result : <span>{{result}}</span></p>
+    </div>
+</div>

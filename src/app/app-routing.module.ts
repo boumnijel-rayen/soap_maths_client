@@ -1,7 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CosComponent } from './cos/cos.component';
+import { MaxComponent } from './max/max.component';
+import { MinComponent } from './min/min.component';
+import { SinComponent } from './sin/sin.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'cos', component: CosComponent },
+  {path:'sin', component: SinComponent},
+  {path:'min', component: MinComponent},
+  {path:'max', component: MaxComponent},
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
